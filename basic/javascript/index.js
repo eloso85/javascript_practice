@@ -331,5 +331,17 @@ function func34(int1, int2){
 }
 
 func34(45,60)
-func34(25,60)//dsfdsf
-func34(45,80)//
+func34(25,60)
+func34(45,80)
+
+//. 35Write a program to check whether a specified character exists within the 2nd to 4th position in a given string
+console.log("<---- Answer 34 ---->");
+function func35(char){
+    const string = "string"
+    const position = string.substring(1,5)
+    char === position ? console.log(`${char} is in postion 2nd to 4th of ${string}`): console.log(`${char} is not postion 2nd to 4th of ${string}`);
+    
+}
+
+func35("trin")
+func35("tri")
