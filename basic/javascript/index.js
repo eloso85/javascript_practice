@@ -320,3 +320,16 @@ function func33(int1, int2){
 func33(44, 56);
 func33(70, 95);
 func33(50, 89);
+
+
+//34 Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive
+console.log("<---- Answer 34 ---->");
+function func34(int1, int2){
+    const array1 = Array.from({ length: 61 - 40  }, (_, i) => 40 +i)
+    array1.includes(int1) && array1.includes(int2)? console.log(Math.max(int1, int2)):console.log("numbers not in range");;
+    
+}
+
+func34(45,60)
+func34(25,60)
+func34(45,80)
