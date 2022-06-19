@@ -335,7 +335,7 @@ func34(25,60)
 func34(45,80)
 
 //. 35Write a program to check whether a specified character exists within the 2nd to 4th position in a given string
-console.log("<---- Answer 34 ---->");
+console.log("<---- Answer 35 ---->");
 function func35(char){
     const string = "string"
     const position = string.substring(1,5)
@@ -345,3 +345,30 @@ function func35(char){
 
 func35("trin")
 func35("tri")
+
+//36. Write a JavaScript program to check whether the last digit of the three given positive integers is same.
+console.log("<---- Answer 36 ---->");
+function func36(int1, int2, int3){
+    
+    const first = String(int1).slice(-1)
+    const second = String(int2).slice(-1)
+    const third = String(int3).slice(-1)
+
+        first === second && second === third ? console.log("They all match"): console.log("They dont match");
+
+    
+}
+func36(25,34,45)
+
+//37. Write a JavaScript program to create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.
+
+console.log("<---- Answer 37 ---->");
+
+function func37(){
+    const string = "PYTHON"
+    const front = string.toLocaleLowerCase().substring(0,3)
+    const back = string.substring(3, string.length)
+    console.log(front + back);
+}
+
+func37()
