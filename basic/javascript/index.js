@@ -364,11 +364,38 @@ func36(25,34,45)
 
 console.log("<---- Answer 37 ---->");
 
-function func37(){
-    const string = "PYTHON"
+function func37(string){
+    // const string = "PYTHON"
     const front = string.toLocaleLowerCase().substring(0,3)
     const back = string.substring(3, string.length)
-    console.log(front + back);
+    if(string.length<= 3){
+        return string.toUpperCase()
+    }else{
+        return front + back
+    }
+   
 }
 
-func37()
+console.log(func37("Python"));
+console.log(func37("Py"));
+console.log(func37("JAVAScript"));
+
+//38. Write a JavaScript program to check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90. Return true if the student get A+ grade or false otherwise.
+console.log("<---- Answer 37 ---->");
+
+function func38(grade1, grade2, grade3, grade4){
+    const gradeArray = []
+    gradeArray.push(grade1, grade2,grade3, grade4)
+    let sum = gradeArray.reduce(function(previousValue, currentValue){
+        return previousValue + currentValue
+    })
+
+    if (Math.round(sum/gradeArray.length)>= 90){
+        console.log("A+");
+    }else{
+        console.log("not a A+");
+    }
+    console.log(Math.round(sum / gradeArray.length));
+    console.log(sum);
+ }
+func38(86,90,98,90)
