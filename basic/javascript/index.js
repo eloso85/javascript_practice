@@ -381,7 +381,7 @@ console.log(func37("Py"));
 console.log(func37("JAVAScript"));
 
 //38. Write a JavaScript program to check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90. Return true if the student get A+ grade or false otherwise.
-console.log("<---- Answer 37 ---->");
+console.log("<---- Answer 38 ---->");
 
 function func38(grade1, grade2, grade3, grade4){
     const gradeArray = []
@@ -395,7 +395,43 @@ function func38(grade1, grade2, grade3, grade4){
     }else{
         console.log("not a A+");
     }
-    console.log(Math.round(sum / gradeArray.length));
-    console.log(sum);
+    
  }
 func38(86,90,98,90)
+
+//39Write a JavaScript program to compute the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80
+console.log("<---- Answer 39 ---->");
+
+function func39(int1, int2){
+    const sum = int1 + int2
+    const array = Array.from({ length: 66 - 50  }, (_, i) => 50 +i)
+
+    array.includes(sum) ? console.log("65"): console.log("80");
+   
+    
+}
+func39(30,20)
+func39(90,80)
+
+//40 Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8
+console.log("<---- Answer 40 ---->");
+
+function func40(int1, int2){
+    const sum = int1 + int2;
+    const diff = Math.abs(int1 - int2);
+
+    if (int1 == 8 || int2 == 8){
+        return console.log("true");
+    }if (sum === 8 || diff === 8){
+        return console.log('true');
+    }
+    return console.log('false');
+
+}
+
+func40(7,8)
+func40(16,8)
+func40(24,32)
+func40(17,18)
+
+
