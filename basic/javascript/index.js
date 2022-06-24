@@ -434,4 +434,23 @@ func40(16,8)
 func40(24,32)
 func40(17,18)
 
+//41. Write a JavaScript program to check three given numbers, if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40
+console.log("<---- Answer 41 ---->");
+function func41(int1, int2, int3){
+    if (int1 == int2 && int2 == int3){
+      return console.log('30');
+    }if (int1 == int2 || int2 == int3 || int3 == int1){
+      return console.log("40");
+    }else{
+      return console.log("20");
+    }
+}
 
+func41(8,8,8);
+func41(8,8,18);
+func41(8,7,18);
+
+//42 Write a JavaScript program to check whether three given numbers are increasing in strict mode or in soft mode.
+function func42(x,y,z){
+
+}
