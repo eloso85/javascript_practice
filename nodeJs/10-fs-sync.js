@@ -8,5 +8,3 @@ const result = readFileSync('./content/result-sync.txt', 'utf8')
 console.log(first, second, result);
 
 writeFileSync('./content/result-sync.txt', `Here is the result : ${first}, ${second}`, { flag: 'a'})
-
-
