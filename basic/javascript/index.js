@@ -451,6 +451,37 @@ func41(8,8,18);
 func41(8,7,18);
 
 //42 Write a JavaScript program to check whether three given numbers are increasing in strict mode or in soft mode.
+console.log("<---- Answer 42 ---->");
 function func42(x,y,z){
+	if ( y > x && z > y) 
+	{
+	  return console.log("strict mode");    
+	}
+	else if(z > y) 
+	 return console.log("Soft mode");
+	else
+	  return console.log("Undefinded");
+  }
+func42(10,15,31)
+func42(24,22,31)
+func42(50,21,15)
+
+//43. Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
+console.log("<---- Answer 43 ---->");
+
+function func43(x,y,z){
+	const first = String(x).slice(-1)
+    const second = String(y).slice(-1)
+    const third = String(z).slice(-1)
+	
+		
+
+		parseInt(first) === parseInt(second) && parseInt(second) === parseInt(third) ? console.log("They all match"): console.log("They dont match");
 
 }
+
+func43(22,32,42)
+func43(102,302,2)
+func43(20,22,45)
+
+//44. Write a JavaScript program to check from three given integers that whether a number is greater than or equal to 20 and less than one of the others
