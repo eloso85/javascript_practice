@@ -23,4 +23,3 @@ readFile('./content/first.txt',"utf-8",(err,result)=>{
    })
    })
 })
-
