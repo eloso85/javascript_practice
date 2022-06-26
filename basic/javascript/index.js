@@ -485,3 +485,51 @@ func43(102,302,2)
 func43(20,22,45)
 
 //44. Write a JavaScript program to check from three given integers that whether a number is greater than or equal to 20 and less than one of the others
+console.log("<---- Answer 44 ---->");
+
+function func44(x,y,z){
+    let int1 = x >= 20 && (x < y || x < z)
+    let int2 = y >= 20 && (y < x || y < z)
+    let int3 = z >= 20 && (z < y || z < x)
+    
+    int1 || int2 || int3 ? console.log('true') : console.log('false');
+}
+
+func44(23, 45, 10)
+func44(23, 23, 10)
+func44(21, 66, 75)
+
+//45. Write a JavaScript program to check two given integer values and return true if one of the number is 15 or if their sum or difference is 15.
+
+console.log("<---- Answer 45 ---->");
+
+function func45(x,y){
+    let sum = x + y === 15;
+    let diff = Math.abs(x - y) === 15; 
+    
+    sum || diff || x === 15 || y === 15 ? console.log("true"):console.log("false");
+}
+
+func45(15,9)
+func45(25,15)
+func45(7,8)
+func45(25,10)
+func45(5,9)
+func45(7,9)
+func45(9,25)
+
+
+//46. Write a JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11
+console.log("<---- Answer 46 ---->");
+function func46(x,y){
+    let seven = (int) => int % 7 == 0;
+    let eleven = (int) => int % 11 == 0;
+    
+    
+    console.log((seven(x) && eleven(x)));
+}
+
+func46(14, 21)
+func46(14, 20)
+func46(16, 20)
+
