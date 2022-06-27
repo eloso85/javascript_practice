@@ -526,10 +526,15 @@ function func46(x,y){
     let eleven = (int) => int % 11 == 0;
     
     
-    console.log((seven(x) && eleven(x)));
+   if(!((seven(x) || eleven(x)) && (seven(y) || eleven(y)))){
+    return ((seven(x) || eleven(x)) || (seven(y) || eleven(y)))
+   }else
+   return false
 }
 
-func46(14, 21)
-func46(14, 20)
-func46(16, 20)
+console.log(func46(14, 21))
+console.log(func46(14, 20))
+console.log(func46(16, 20))
+
+
 
