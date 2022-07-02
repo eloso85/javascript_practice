@@ -1,6 +1,6 @@
-const  { profile }  = require('../sampleData.js');
+const  { profiles }  = require('../sampleData.js');
 
-const {GraphQLObjectType, GraphQLBoolean ,GraphQLInt ,GraphQLID, GraphQLString, GraphQLSchema } = require('graphql')
+const {GraphQLObjectType, GraphQLBoolean ,GraphQLInt ,GraphQLID, GraphQLString, GraphQLSchema, GraphQLList } = require('graphql')
 
 const ProfileType = new GraphQLObjectType({
     name:'Profile',
@@ -28,11 +28,17 @@ const ProfileType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
     fields:{
+        profiles:{
+            type: new GraphQLList(ProfileType),
+            resolve(parenr, args){
+                return profiles
+            }
+        },
         profile:{
             type: ProfileType,
             args:{ id: {type: GraphQLID} },
             resolve(parent, args){
-                return profile.find(profile => profile.id === args.id)
+                return profiles.find(profile => profile.id === args.id)
             }
         }
     }

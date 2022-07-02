@@ -1,4 +1,4 @@
-const profile = [
+const profiles = [
     {
       id: "62bbcfce7ea16b00aad69049",
       index: 0,
@@ -86,4 +86,4 @@ const profile = [
     }
   ];
 
-  module.exports = {profile}
+  module.exports = {profiles}
