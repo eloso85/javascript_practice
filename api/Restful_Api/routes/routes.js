@@ -10,6 +10,7 @@ const router = express.Router();
 const getProfiles = async (req, res, next) => {
     try{
         const data = fs.readFileSync(path.join(__dirname,'../data/data.json'));
+        console.log(data);
         const profiles = JSON.parse(data);
         const profile = profiles.find(profile => profile.id === Number(req.params.id));
             if(!profile){
