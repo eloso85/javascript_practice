@@ -538,3 +538,40 @@ console.log(func46(16, 20))
 
 
 
+//48. Write a JavaScript program to reverse a given string.
+console.log("<---- Answer 48 ---->");
+function func48(str){
+    const answer = str.split("").reverse().join("");
+    return console.log(answer);
+
+}
+func48("hello")
+
+//49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
+console.log("<---- Answer 49 ---->");
+
+const test = String.fromCharCode(1 + "a".charCodeAt(0))
+console.log(test);
+
+// function func49(str){
+//     var s = str.split('');
+//     console.log(s);
+//         for(var i = 0; i < s.length; i++){
+//             console.log(s[i]);
+//             switch(s[i]) {
+//                 case ' ':
+//                   break;
+//                 case 'z':
+//                   s[i] = 'a';
+//                   break;
+//                 case 'Z':     // One case you forgot to handle
+//                   s[i] = 'A';
+//                   break;
+//                 default:
+//                   s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+//                   console.log(s[i]);
+//               }
+//         }
+// }
+
+//func49("dog")
