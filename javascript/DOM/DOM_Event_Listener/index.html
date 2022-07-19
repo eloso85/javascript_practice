@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden-content{
+            display: none;
+        }
+        .hidden-content.reveal-btn{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Event Listener</h1>
+
+    <div class="container">
+        <div class="boxes box1">
+            <div id="heading">Example 1</div>
+            <button class="btn-1" onclick="alert('I love javascript')">Enter</button>
+        </div>
+        <div class="boxes box2">
+            <div id="heading">Example 2</div>
+            <button class="btn-2">Enter</button>
+        </div>
+        <div class="boxes box3">
+            <div id="heading">Example 3</div>
+            <button class="btn-3">Enter</button>
+        </div>
+    </div>
+
+    <h1 id="main-heading2">Event Listener 2</h1>
+
+    <div class="container">
+        <button class="reveal-btn boxes">Reveal More</button>
+    </div>
+
+    <div class="hidden-content boxes">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto ad ratione quisquam consequuntur quod distinctio voluptas repellendus, esse quae?
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
